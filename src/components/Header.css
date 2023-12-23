@@ -1,9 +1,80 @@
 /* src/components/Header.css */
 
+/* Overall Header Styling */
 .header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
+  background-color: #d2b48c; /* Beige */
+  color: #556b2f; /* Olive Green */
+  padding: 0.5rem; /* Adjust the padding to make the header less tall */
+  line-height: 1; /* Set the line height to 1 to remove any extra spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo-container {
+  max-width: 100px;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+/* Navigation Styling */
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #556b2f; /* Olive Green */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #d2b48c; /* Beige */
+}
+
+.nav a:hover {
+  background-color: #8fbc8f; /* Dark Olive Green */
+}
+
+/* Search Container Styling */
+.search-container {
+  flex-grow: 1;
+  margin: 0 1rem;
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #556b2f; /* Olive Green */
+  border-radius: 5px;
+}
+
+button {
+  background-color: #8fbc8f; /* Dark Olive Green */
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* User Actions Styling */
+.user-actions button {
+  margin-left: 1rem;
+  background-color: #d2b48c; /* Beige */
+  color: #556b2f; /* Olive Green */
+  border: 1px solid #556b2f; /* Olive Green */
+  border-radius: 5px;
+}
+
+.user-actions button:hover {
+  background-color: #8fbc8f; /* Dark Olive Green */
+  color: white;
+}
